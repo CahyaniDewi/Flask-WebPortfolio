@@ -1,0 +1,339 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>Personal Portfolio</title>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="header">
+        <div class="container-fluid gx-0">
+            <nav class="navbar navbar-expand-lg py-0 ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Caa</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#page-top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                        </li>
+            
+                      <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                      </li>
+        
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Our Projects </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn-navbar" href="#footer">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <!-- Home Section -->
+        <section class="home" id="page-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="home_container">
+                            <div class="home_content">
+                                <h5><div class="heading-sm">Hey I'm</div></h5>
+                                <h2><div class="heading_lg">Ni<span>Made</span></div></h2>
+                                <h5><div class="heading_md">Graphics Design/Web Developer</div></h5>
+                                <div class="links_home">
+                                    <a href="https://drive.google.com/file/d/1pLuaKMxQJ1WPCkzOcl2kgI6YzlOb48LX/view?usp=sharing" class="btn_home btn-2">Donwload CV</a>
+                                    <a href="#" class="btn_home">Hire Me</a>
+                                </div>
+                                
+                                <div class="sosial_links">
+                                    <i class="fa-brands icon_social fa-linkedin-in"> </i>
+                                    <i class="fa-brands icon_social  fa-instagram"></i>
+                                    <i class="fa-brands icon_social  fa-whatsapp"></i>
+                                    <i class="fa-brands icon_social fa-google"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- img home -->
+                    <div class="col-lg-6">
+                        <img class="img_home" src="{{ url_for('static', filename='images/home.png') }}" alt="My Image">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+
+     <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <!-- image about -->
+          <div class="img_container_about">
+            <div class="img_about"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="content_about">
+            <span class="title_span"></span>
+            <h3 class="heading_about_content">About Me</h3>
+            <p class="para_content">Hello my name is Ni Made
+              Cahyani Dewi. My friends call me
+              Cahya. I was born in Meliling
+              Kangin, 29 March 2003. I from
+              Bali. I'm hard worker. I'll do my
+              best for my jobs</p>
+
+            <div class="details_about">
+              <ul>
+                <li class="list_about"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>
+                  <p class="pra_details">Have educational provision from PGRI Vocational School
+                    1 Denpasar, majoring in Multimedia, creating
+                    I am interested in the world of IT.</p>
+                </li>
+
+                <li class="list_about"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>
+                  <p class="pra_details">I am an individual who is passionate about photography and videography. 
+                    I have developed knowledge and skills in both of these areas over the past 3 year</p>
+                </li>
+
+                <li class="list_about"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>
+                  <p class="pra_details">
+                    I am a dedicated and creative web design professional. I have experience in designing and developing
+                     attractive websites focused on good user experience.</p>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn_about_content">learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section class="Service" id="service">
+    <div class="container">
+      <div class="title_heading_service">
+        <span class="title_span">Service / Features</span>
+        <h3 class="heading_services">Our Features</h3>
+        <p class="para_heading_services">Opening a private job vacancy service is a business that aims to provide recruitment and 
+          talent search services to companies and prospective workers. This is a business that allows you to act as a 
+          liaison between job seekers and companies looking for new employees.</p>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex justify-content-center">
+          <div class="content_box_service">
+            <span class="icon_container"><i class="fa-solid fa-file-contract" id="icon_services"></i></span>
+            <h4 class="heading_content_service">
+              Graphics Design
+            </h4>
+            <p class="para_content_service">Graphic design is the process of creating visual elements, such as illustrations, 
+              logos, posters, brochures, and other graphic elements, with the aim of conveying a message or concept in an attractive and aesthetic way.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex justify-content-center">
+          <div class="content_box_service">
+            <span class="icon_container"><i class="fa-solid fa-envelope-open-text" id="icon_services"></i></span>
+            <h4 class="heading_content_service">
+              Email Marketing
+            </h4>
+            <p class="para_content_service">Email marketing is a marketing strategy that involves sending emails to a list of customers or prospects for 
+              the purpose of promoting products or services, sharing content, or communicating with a target audience.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex justify-content-center">
+          <div class="content_box_service">
+            <span class="icon_container"><i class="fa-solid fa-envelope-open-text" id="icon_services"></i></span>
+            <h4 class="heading_content_service">
+              Application Design
+            </h4>
+            <p class="para_content_service">Application design involves designing the user interface (UI) and user experience (UX) for software applications,
+                both mobile apps and desktop applications.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mt-4 d-flex justify-content-center">
+          <div class="content_box_service">
+            <span class="icon_container"><i class="fa-solid fa-pen-nib" id="icon_services"></i></span>
+            <h4 class="heading_content_service">
+              Creative Design
+
+            </h4>
+            <p class="para_content_service">Creative design is a broader approach to creating unique, 
+              original and innovative visual elements.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our_client" >
+    <div class="container">
+      <div class="container_client_content">
+        <div class="content_clients">
+          <h3 class="heading_data">5</h3>
+          <p class="para_data">YEAR OF EXPERIENCED</p>
+        </div>
+
+        <div class="content_clients">
+          <h3 class="heading_data">1.000</h3>
+          <p class="para_data">HAPPY CUSTOMER</p>
+        </div>
+
+        <div class="content_clients">
+          <h3 class="heading_data">10</h3>
+          <p class="para_data">PROJECT COMPLETED</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Project Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <span class="title_span">WELCOME TO PROJECT SECTION</span>
+      <h3 class="heading_title_projects">CHECK OUR PROJECTS :</h3>
+
+      <div class="nav_link_container">
+        <ul class="d-flex flex-wrap mt-2">
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">All</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar active">WEB DEVELOPMENT</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">UI / UX DESIGN</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">BRANDING</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">GRAPHIC DESIGN</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">WEB DESIGN</a></li>
+          <li class="item_navbar_projects"><a href="#" class="project_navbar">MARKETING</a></li>
+        </ul>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-4 col-6">
+          <div class="content_project_container_1">
+            <div class="box_container box_1"></div>
+            <div class="box_container box_2"></div>
+            <div class="box_container box_3"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6">
+          <div class="content_project_container_2">
+            <div class="box_container box_4"></div>
+            <div class="box_container box_5"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 table_mode_project">
+          <div class="content_project_container_3">
+            <div class="box_container box_6"></div>
+            <div class="box_container box_7"></div>
+            <div class="box_container box_8"></div>
+            <div class="box_container box_9"></div>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </section>
+
+ 
+<
+<!-- Footer -->
+
+<section class="footer_section" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-5 col-sm-5 col-7">
+        <div class="content_footer_part">
+          <h3 class="heading_logo text-white">Caabali.</h3>
+          <p class="address_para">Jl.Lempuyangan</p>
+          <p class="contact_para"><span class="call_us">Phone:</span>0888-9999-0000</p>
+          <p class="contact_para"><span class="call_us">Email:</span>cahyanidewi86@gmail.com</p>
+
+          <div class="social_media_profiles mt-3">
+            <!-- icons -->
+            <span class="social_link_footer"><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="social_link_footer"><i class="fa-brands fa-instagram"></i></span>
+            <span class="social_link_footer"><i class="fa-brands fa-google-play"></i></span>
+            <span class="social_link_footer"><i class="fa-brands fa-twitter"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-sm-3 col-5">
+        <h3 class="heading_footer_part">Pages</h3>
+
+        <div class="nav_link_footer text-white">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" aria-current="page" href="#page-top"> <span class="icon_about"><i class="fa-solid fa-check-double"></i></span> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#about"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#service"> <span class="icon_about"><i class="fa-solid fa-check-double"></i></span>Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#projects"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>Our Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+        <h3 class="heading_footer_part">Our Services</h3>
+        <div class="services_footer_parat_navlink">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" aria-current="page" href="#projects"> <span class="icon_about"><i class="fa-solid fa-check-double"></i></span> Web Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>UI/UX Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#"> <span class="icon_about"><i class="fa-solid fa-check-double"></i></span>Web Development</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link pages_link_footer" href="#"><span class="icon_about"><i class="fa-solid fa-check-double"></i></span>Graphics Design</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+    
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer_copyright">© Copyright cahya web. All Rights Reserved</p>
+    <p class="footer_credit_area">Designed by Caabali </p>
+  </footer>
+</section>
+
+{% endblock %}
